@@ -1,0 +1,67 @@
+textarea {
+    min-height: 400px;
+}
+body{
+    background-color: rgb(248, 248, 248);
+    font-family: Roboto, sans-serif;
+}
+.read,
+.unread{
+    display: grid;
+    grid-template-columns: 250px 1fr 200px;
+    background-color: rgb(229, 229, 229);
+    border: 2px solid rgb(226, 226, 226);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.unread{
+    background-color: rgb(255, 255, 255); 
+}
+.view-message{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border: 1px solid rgb(226, 226, 226);
+    margin-bottom: 0.5rem;
+    background-color: rgb(255, 255, 255);
+}
+.archive,
+.unarchive{        
+	background-color:rgb(0, 123, 255);
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(255, 255, 255);
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+    margin-bottom: 1rem;
+    border: none; 
+}
+.unarchive{
+    background-color:rgb(251, 27, 27);
+}
+.reply-btn{
+    box-shadow:inset 0px 1px 0px 0px rgb(255, 255, 255);
+	background:linear-gradient(to bottom, rgb(255, 255, 255) 5%, rgb(246, 246, 246) 100%);
+	background-color:rgb(255, 255, 255);
+	border-radius:6px;
+	border:1px solid rgb(220, 220, 220);
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(102, 102, 102);
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px rgb(255, 255, 255);
+    margin-bottom: 1rem;
+
+        &:hover {            
+            background-color:rgb(246, 246, 246);
+        }
+}
+.timestamp{
+    color: rgb(102, 102, 102);
+}
